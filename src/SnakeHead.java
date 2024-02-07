@@ -30,7 +30,7 @@ public class SnakeHead extends BodyPart{
         verifyOutOfBounds();
     }
     public void verifyOutOfBounds(){
-        if(x < 0 || x > GameScreen.getWidthTiles()||y<0||y>GameScreen.getHeightTiles()){
+        if(x < 0 || x >= GameScreen.getWidthTiles()||y<0||y>=GameScreen.getHeightTiles()){
             snake.gameOver = true;
         }
     }
